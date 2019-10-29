@@ -159,7 +159,7 @@ nav{
     background-color: #ffffff;
     padding: 71px 0 65px 0;
 }
-.reasons_start .advantages{
+.label{
     display:block;
     width: 112px;
     height: 24px;
@@ -176,7 +176,7 @@ nav{
     color: #ffffff;
     margin: 0 auto;
 }
-.reasons_start .reasons_start_header{
+.header{
     text-transform: uppercase;
     margin: 38px;
     font-size: 38px;
@@ -200,10 +200,20 @@ nav{
     align-items: center;
     margin-top: 35px;
 }
-.reasons_start .reasins_start_img{
+.reasons_start .reasins_start_img_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 113px;
     min-height: 113px;
+    background-color: #1eacc7;
     margin-right: 26px;
+    border-radius: 100%;
+}
+.reasons_start .reasins_start_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .reasons_start .reasons_start_info{
     width: 341px;

@@ -10,7 +10,7 @@ header
 nav
   width: 100%
   position: fixed
-  z-index: 1
+  z-index: 5
   top: 0px
   max-height: 50px
   background-color: #212121
@@ -180,6 +180,15 @@ nav
   letter-spacing: normal
   text-align: center
   color: #222222 
+.subtitle
+    color: #222222
+    font-family: Roboto
+    font-size: 17px
+    font-weight: 400
+    line-height: 21px
+    text-align: center
+    margin-top: 19px
+
 .reasons_start
   .reasons_start_item
     display: flex
@@ -233,14 +242,7 @@ nav
   min-height: 864px
   padding: 48px 0 80px 0
   background: url('../img/background/bd_mobail_app_uber.png') center (center/cover) no-repeat
-  .subtitle
-    color: #222222
-    font-family: Roboto
-    font-size: 17px
-    font-weight: 400
-    line-height: 21px
-    text-align: center
-    margin-top: 19px
+  
   .row
     margin-top: 32px
   &_item
@@ -279,3 +281,56 @@ nav
       left: 50%
       transform: translateX(-50%)
       cursor: pointer      
+.choice
+  position: relative
+  min-height: 896px
+  background-color: #070716
+  padding: 56px 0 138px 0
+  
+  .lable_choice
+    background-color: #ffffff
+    color: #070716
+  .title_choice 
+    color: #ffffff
+  .subtitle_choice 
+    color: #ffffff
+  .under_bg
+    position: absolute
+    bottom: 0px
+    left: 0px
+    background: url('../img/background/bg_great_thing_second.png')center (center/cover) no-repeat
+    height: 397px
+    width: 100%
+    z-index: 0
+  .uberX
+    margin-top: 56px
+    position: relative
+    .main_car
+      display: flex
+      justify-content: center
+      z-index: 2
+    .main_car_img
+      background: url('../img/main_uber_car_2.png')  
+      width: 759px
+      height: 480px
+      .main_car_text
+        z-index: 2
+        display: flex
+        justify-content: center
+        margin-top: 31px
+
+
+  .coice_subtext
+    position: absolute
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    text-align: center
+    z-index: 2
+    bottom: 108px
+    left: 50%
+    transform: translateX(-50%)
+
+.conditions
+  min-height: 919px

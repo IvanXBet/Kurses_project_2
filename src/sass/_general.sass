@@ -295,7 +295,7 @@ nav
         
 .choice
 	position: relative
-	min-height: 896px
+	height: 896px
 	background-color: #070716
 	padding: 56px 0 138px 0
 	
@@ -314,25 +314,19 @@ nav
 		height: 397px
 		width: 100%
 		z-index: 0
-	.uberX
+	&_uberX
 		margin-top: 56px
 		position: relative
-		.main_car
-			display: flex
-			justify-content: center
-			z-index: 2
-		.main_car_img
-			background: url('../img/main_uber_car_2.png')  
-			width: 759px
-			height: 480px
-		.main_car_text
-			z-index: 2
-			display: flex
-			justify-content: center
-			margin-top: 31px
+		z-index: 2
+		&_img
+			display: block
+			margin: 0 auto
+				
+				
+			
 
 
-	.choice_subtext
+	&_subtext
 		position: absolute
 		color: #222222
 		font-size: 17px
@@ -348,7 +342,7 @@ nav
 	min-height: 919px
 	padding: 68px 0 94px 0
 	&_block
-		margin: 33px 0
+		margin: 20px 0
 		&_nmb
 		margin-bottom: 0
 	&_title
@@ -403,11 +397,6 @@ nav
 		position: absolute
 		bottom: 49px
 		font-size: 15px
-		font-weight: normal
-		font-stretch: normal
-		font-style: normal
-		line-height: 68px
-		letter-spacing: normal
 		text-align: center
 		text-decoration: uppercase
 		color: #1fbad6
@@ -422,60 +411,53 @@ nav
 	position: relative
 	height: 148px
 	background-color: #ffffff
+	padding-top: 14px 
 	&_line
 		margin: 0 auto
-		margin-top: 14px
 		width: 299px
 		height: 4px
 		background-color: #1fbad6
 	&_text
-		display: flex
-		justify-content: space-around
-		margin-top: 32px
-		&_block_link
-			font-size: 15px
-			font-weight: 300
-			font-stretch: normal
-			font-style: normal
-			letter-spacing: normal
-			transition: 0.5s all
-			color: #070716
-			text-transform: uppercase
-			&:hover
-				text-decoration: none
-				color: #000
-	&_subtext
-		display: flex
-		justify-content: space-between
-		
-		&_block_sublink
-		font-size: 11px
-		font-weight: 300
-		font-stretch: normal
-		font-style: normal
-		letter-spacing: normal
-		color: #999999
-		transition: 0.3s all
-		&:hover
-			text-decoration: none
-			color: #000
+		width: 390px
+		margin: 0 auto
+		margin-top: 23px
+		&_main
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+				&:hover
+					text-decoration: none
+					color: #000
+		&_sub
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+				&:hover
+					text-decoration: none
+					color: #000
 	&_language
 		width: 50px
 		display: block
 		font-size: 11px
-		font-weight: normal
-		font-stretch: normal
-		font-style: normal
 		text-transform: uppercase
-		letter-spacing: normal
 		text-align: center
 		color: $blue-export
 		margin: 0 auto
 		margin-top: 19px
 		transition: 0.3s all
 		&:hover
-		text-decoration: none
-		color: #000
+			text-decoration: none
+			color: #000
 	&_downloads
 		position: absolute
 		right: 61px
@@ -506,6 +488,7 @@ nav
 
 .under_footer
 	height: 9px
+	width: 100%
 	background-color: #070716
 
 .xs-visible

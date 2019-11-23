@@ -58,6 +58,14 @@
 			font-size: 39px
 		&_subheader
 			font-size: 29px
+	.mobail
+		.title
+			margin-top: 15px
+		.subtitle
+			margin-top: 10px
+		&_item
+			width: 310px
+			height: 290px
 	.reasons
 		&_item
 			flex-direction: column
@@ -67,9 +75,56 @@
 			&_info
 				width: 300px
 				margin-top: 20px
+	.choice
+		height: 860px
+		.under_bg
+			height: 361px
+		&_uberX
+			&_img
+				width: 700px
+		&_subtext
+			bottom: 92px
+		.title
+			margin-top: 20px
 	.footer
+		height: 245px
+		padding: 20px 0 20px 0
+		&_line
+			
+			margin: 0 auto
+			width: 253px
+  			height: 4px
+		&_text
+			margin-top: 15px
+			width: 290px 
+			&_main 
+				padding: 0
+				font-size: 14px
+			&_sub 
+				width: 270px
+				flex-wrap: wrap
+				justify-content: center
+				margin-top: 10px 
+				margin-left: 10px
+				a 
+					font-size: 13px
+					margin: 0px 10px
+		&_language
+			font-size: 11px
+			margin-top: 13px
+		&_repost
+			left: 50%
+			top: 150px
+			transform: translateX(-50%)
 		&_downloads
-
+			width: 264px
+			left: 50%
+			top: 201px
+			transform: translateX(-50%)
+			&_link
+				margin: 0
+				img
+					height: 24px
 @media(max-width: 767px)
 
 	header
@@ -144,6 +199,42 @@
 			line-height: 45px
 		&_subheader
 			font-size: 29px
+	.mobail
+		.title
+			font-size: 20px
+		.subtitle
+			width: 360px
+			margin: 0 auto
+		&_item
+			width: 363px
+			height: 350px
+			margin: 0 auto
+			margin-bottom: 30px
+	.choice
+		height: 600px
+		.under_bg
+			display: none
+		&_uberX
+			&_img
+				width: 500px
+		&_subtext
+			width: 249px
+			bottom: 33px
+			font-size: 17px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			color: #ffffff
+	.require
+		.title
+			font-size: 30px
+		&_block
+			width: 390px
+			margin: 0 auto
+			margin-top: 25px
+
+			
+
 @media(max-width: 575px)
 	nav
 		height: 30px
@@ -205,16 +296,18 @@
 	.mobail
 		height: 1884px
 		padding: 22px 0 43px 0
+		
 		.subtitle	
+			
 			margin-top: 11px
 			font-size: 14px
 			line-height: 1.5
 		.row
 			margin-top: 27px
 		&_item
-			width: 100%
+			
 			height: 254px
-			padding-top: 81px
+			padding-top: 51px
 			&_6
 				margin-bottom: 0
 			&_text
@@ -235,7 +328,7 @@
 		&_uberX
 			&_img
 				width: 300px
-				margin: 0
+				margin: 0 auto
 		&_subtext
 			width: 249px
 			bottom: 33px
@@ -246,13 +339,15 @@
 			color: #ffffff	
 	.require
 		padding: 25px 0 25px 0
-		height: 1049px
+		height: 1050px
 		
 		&_block
+			width: 100%;
 			margin-top: 20px
 			
-		&_title
-			font-size: 16px
+		.title
+			font-size: 27px
+			line-height: 25px
   			font-weight: normal
 		&_list
 			margin-top: 5px
